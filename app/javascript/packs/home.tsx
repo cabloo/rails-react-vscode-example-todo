@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Hello from "../components/Hello";
+import AppNav from "../components/AppNav";
+import TodoPage from "../components/TodoPage";
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
-    <Hello greeting="VSCode user" />,
+    <>
+      <AppNav />
+      <TodoPage />
+    </>,
     document.body.appendChild(document.createElement("div"))
   );
 });
